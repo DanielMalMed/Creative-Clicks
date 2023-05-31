@@ -13,6 +13,7 @@ app.use(express.json());
 const uri = process.env.ATLAS_URI;
 mongoose.connect("mongodb+srv://Danon:Danonino@cluster0.dntmts1.mongodb.net/?retryWrites=true&w=majority", { useNewUrlParser: true });
 const connection = mongoose.connection;
+
 connection.once('open', () => {
     console.log("MongoDB database connection established succesfully")
 })
@@ -20,6 +21,7 @@ connection.once('open', () => {
 const tpostRouter = require('./routes/tpost')
 
 app.use('/tpost', tpostRouter);
+
 app.listen(port, () => {
     console.log ( `Server is running on port : ${port}`);
 });
