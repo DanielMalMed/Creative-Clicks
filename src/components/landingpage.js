@@ -1,8 +1,12 @@
-import React from "react";
+import React, {useState} from "react";
+import Login from "./Login";
+import Sign_in from "./Signin";
 
 function LandingPage() {
 
-
+    const [currentForm, setCurrentForm] = useState('login');
+    const toggleForm = (formName) => {
+      setCurrentForm(formName);}
     return (
         <div>
             <form action="action_page.php" method="post">
@@ -25,7 +29,7 @@ function LandingPage() {
                     </label>
                 </div>
 
-                <div class="container" style={{backgroundcolor: "#f1f1f1"}}>
+                <div class="container" style={{ backgroundcolor: "#f1f1f1" }}>
                     <button type="button" class="cancelbtn">Cancel</button>
                     <span class="psw">Forgot <a href="#">password?</a></span>
                 </div>
@@ -36,8 +40,14 @@ function LandingPage() {
                     <h1>"Creative-Clicks"</h1>
                 </div>
             </center>
+            <div className="App">
+                {
+                    currentForm === "login" ? <Login onFormSwitch={toggleForm} /> : <Sign_in onFormSwitch={toggleForm} />
+                }
+            </div>
         </div>
-                )
+
+    )
 }
 
-                export default LandingPage
+export default LandingPage

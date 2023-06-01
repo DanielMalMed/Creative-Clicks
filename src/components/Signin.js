@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export function Sign_in (props){
+function Sign_in (props){
     const [email, setEmail] = useState('');
     const [pass, setPass] = useState('');
     const [name, setName] = useState('');
@@ -27,3 +27,5 @@ export function Sign_in (props){
         </div>
     )
 }
+
+export default Sign_in
