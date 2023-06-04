@@ -20,6 +20,7 @@ function Login (props) {
 
         </form>
         <button className="link-btn" onClick={() => props.onFormSwitch('Sign_in')}> Don't have an account? Sign in here. </button>
+        <button className="link-btn" onClick={() => window.location = "/ProfilePageOwnersView"}> Don't want to login? just check our website </button>
         </div>
     )
 }

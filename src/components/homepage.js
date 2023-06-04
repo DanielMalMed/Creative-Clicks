@@ -38,8 +38,6 @@ function Homepage(props) {
     }
     return(
         <>
-            <h1> this is the homepage hello how are you</h1>
-
             <div>
                 {tpostsList()}
             </div>

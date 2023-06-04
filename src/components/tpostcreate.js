@@ -30,10 +30,11 @@ function Tpostcreate() {
 
             console.log(tpost)
 
-            window.location = "/"
+            window.location = "/ProfilePageOwnersView"
     }
     return(
         <>
+        
             <form onSubmit={onSubmit}>
                 <div>
                 <label>Whats on your mind today?</label>
