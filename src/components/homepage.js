@@ -5,8 +5,8 @@ function Feedsposts(props) {
     return (
         <>
             <div>
-                <span>{props.tpost.content}</span>
-                <span>{props.tpost.mood}</span>
+                <span className="posttext">{props.tpost.content}</span>
+                <span className="postemoji">{props.tpost.mood}</span>
             </div>
         </>
     )
