@@ -17,7 +17,7 @@ function App() {
       <Router>
         <Routes>
 
-          <Route path="/tpostcreate" element={<Tpostcreate />} />
+          <Route path="/tpostcreate" element={<Tpostcreate {...profilePageOwnersViewData}/>} />
           <Route path="/ProfilePageOwnersView" element={<ProfilePageOwnersView {...profilePageOwnersViewData} />} />
           <Route path='/' element={<Landingpage />} />
         </Routes>
