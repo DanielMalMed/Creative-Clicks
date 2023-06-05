@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import logo from "./logo/creative-clicks-logo.svg";
 function Sign_in (props){
     const [email, setEmail] = useState('');
     const [pass, setPass] = useState('');
@@ -11,6 +11,8 @@ function Sign_in (props){
         console.log(email);
     }
     return (
+        <div className="logo-div">
+            <img src={logo} alt="logo of the project"/>
         <div className="auth-form-container">
                 <h2>SignIn</h2>
             <form className="signin-form" onSubmit={handleSubmit}>
@@ -24,6 +26,7 @@ function Sign_in (props){
 
             </form>
             <button className="link-btn" onClick={() => props.onFormSwitch('login')}> Alredy have an account? Login in here. </button>
+        </div>
         </div>
     )
 }

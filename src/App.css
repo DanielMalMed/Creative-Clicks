@@ -4,44 +4,62 @@
   min-height: 100vh;
   align-items: center;
   justify-content: center;
-  background-color: lightslategray;
+  color: white;
+  background-image: linear-gradient(60deg, #0a6046f1, #7f1b2c 50%, #1c1a87);
+  
+}
+.logo-div{
+  display: flex;
+  flex-direction: column;
+  position:relative;
+  width: 50%;
+  align-self: left;
 }
 
 .auth-form-container, .login-form, .signin-form{
   display: flex;
   flex-direction: column;
+  width: 60%;
+  align-self: center;
+  align-content: center;
+  position:relative;
+  
 
 }
 
 .auth-form-container{
-  padding: 5REM;
-  border: 2.5px solid rgb(50, 50, 207);
-  border-radius: 10px;
+  position: relative;
+  padding: 5rem;
+  border: 3.5px solid rgb(194, 214, 201);
+  border-radius: 20px;
+  width: 70%;
 }
 label{
   text-align: left;
-  padding: 0.25rem 0;
+  padding: .5rem;
 
 }
 input{
-  margin: 0.5rem 0;
+  margin: .5rem 0;
   padding: 1rem;
   border: none;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 button {
   border: none;
   background-color: lightblue;
   color: black;
   padding: 5px;
-  border-radius: 10px;
+  border-radius: 20px;
   cursor: pointer;
 }
 .link-btn{
-  background: whitesmoke;
+  background: rgb(237, 234, 234);
   color: black;
   text-decoration: underline;
-  padding: 10px;
+  padding: 5px;
+  margin-bottom: 7px;
+  margin-top: 7px;
 }
  /* this is the css for the page! will be working on it from here down*/
 /* 
