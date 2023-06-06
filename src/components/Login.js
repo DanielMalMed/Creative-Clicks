@@ -1,13 +1,15 @@
 import React, { useState } from "react";
+import { useLogin } from "../hook/useLogin";
 import logo from './logo/creative-clicks-logo.svg';
 
 function Login (props) {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const {login, error, isLoading} = useLogin()
 
-    const handleSubmit = (e) =>{
+    const handleSubmit = async (e) =>{
         e.preventDefault();
-        console.log(email);
+        await login(email, password);
     }
     return(
         <div className="logo-div">
@@ -19,7 +21,8 @@ function Login (props) {
             <input value={email} onChange= {(e) => setEmail(e.target.value)}type="email" placeholder="Enter your email" id="email" name="email"/>
             <label htmlFor="password">password </label>
             <input value={password} onChange = {(e) => setPassword(e.target.value)} type="password" placeholder="***********" id="password" name="password"/>
-            <button type="submit">Log In </button>
+            <button type="submit" disabled={isLoading}>Log In </button>
+            {error && <div>{error}</div>}
 
         </form>
         <button className="link-btn" onClick={() => props.onFormSwitch('Sign_in')}> Don't have an account? Sign in here. </button>

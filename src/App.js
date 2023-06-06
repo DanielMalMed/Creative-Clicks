@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Link, Route, Routes } from 'react-router-dom';
 import React from 'react';
-import Homepage from './components/homepage';
+import ProfilePosts from './components/Profileposts';
 import Tpostcreate from './components/tpostcreate';
 import './App.css';
 import ProfilePageOwnersView from './components/Profilepage';

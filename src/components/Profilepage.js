@@ -1,5 +1,5 @@
 import React from "react";
-import Homepage from "./homepage";
+import ProfilePosts from "./Profileposts";
 import '../App.css';
 
 
@@ -159,7 +159,7 @@ export default function ProfilePageOwnersView(props) {
               <div className="overlap-group4" >
                 <div className="posts" >
                   {posts}
-                  <Homepage /> 
+                  <ProfilePosts /> 
                   <button type="submit" onClick={() => window.location = "/tpostcreate"}>Create Post </button>
                 </div>
                 <img

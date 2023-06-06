@@ -13,7 +13,7 @@ function Feedsposts(props) {
     }
 
 
-function Homepage(props) {
+function ProfilePosts(props) {
     const [tposts, setTposts] = useState({
         tposts: [],
     })
@@ -46,4 +46,4 @@ function Homepage(props) {
     )
 }
 
-export default Homepage
+export default ProfilePosts
