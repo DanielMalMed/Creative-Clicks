@@ -19,8 +19,10 @@ connection.once('open', () => {
 })
 
 const tpostRouter = require('./routes/tpost')
+const userRouter = require('./routes/user')
 
 app.use('/tpost', tpostRouter);
+app.use('/user', userRouter);
 
 app.listen(port, () => {
     console.log ( `Server is running on port : ${port}`);
