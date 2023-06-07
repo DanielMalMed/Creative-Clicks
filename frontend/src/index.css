@@ -11,3 +11,164 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Variables */
+
+:root {
+  --black: rgba(0, 0, 0, 1);
+  --navy-blue: rgba(26, 127, 193, 1);
+  --malachite: rgba(44, 199, 74, 1);
+  --bossanova: rgba(68, 36, 88, 1);
+  --clairvoyant: rgba(73, 0, 87, 1);
+  --blueberry: rgba(96, 91, 255, 0.2);
+  --violet-eggplant: rgba(163, 3, 160, 1);
+  --black-haze: rgba(247, 247, 248, 1);
+  --yellow-orange: rgba(251, 176, 59, 1);
+  --white-2: rgba(255, 255, 255, 0.51);
+  --white: rgba(255, 255, 255, 1);
+
+  --font-size-xxs: 8px;
+  --font-size-xs: 10px;
+  --font-size-s: 12px;
+  --font-size-m: 16px;
+  --font-size-l: 18px;
+  --font-size-l: 31.3px;
+  --font-size-xl: 48px;
+  --font-size-xxl: 36px;
+  --font-size-xl2: 20px;
+  --font-size-xl3: 24px;
+  --font-size-xxl2: 30px;
+
+  --font-family-dm_sans: "DM Sans";
+  --font-family-itim: "Itim";
+  --font-family-nunito: "Nunito";
+}
+
+/* Classes */
+
+.nunito-bold-clairvoyant-16px {
+  color: var(--clairvoyant);
+  font-family: var(--font-family-nunito);
+  font-size: var(--font-size-m);
+  font-weight: 700;
+  font-style: normal;
+}
+.nunito-normal-violet-eggplant-16px {
+  color: var(--violet-eggplant);
+  font-family: var(--font-family-nunito);
+  font-size: var(--font-size-m);
+  font-weight: 400;
+  font-style: normal;
+}
+.nunito-normal-clairvoyant-8px {
+  color: var(--clairvoyant);
+  font-family: var(--font-family-nunito);
+  font-size: var(--font-size-xxs);
+  font-weight: 400;
+  font-style: normal;
+}
+.nunito-semi-bold-violet-eggplant-16px {
+  color: var(--violet-eggplant);
+  font-family: var(--font-family-nunito);
+  font-size: var(--font-size-m);
+  font-weight: 600;
+  font-style: normal;
+}
+.nunito-light-clairvoyant-16px {
+  color: var(--clairvoyant);
+  font-family: var(--font-family-nunito);
+  font-size: var(--font-size-m);
+  font-weight: 300;
+  font-style: normal;
+}
+.nunito-extra-bold-violet-eggplant-20px {
+  color: var(--violet-eggplant);
+  font-family: var(--font-family-nunito);
+  font-size: var(--font-size-xl2);
+  font-weight: 800;
+  font-style: normal;
+}
+.nunito-light-clairvoyant-10px {
+  color: var(--clairvoyant);
+  font-family: var(--font-family-nunito);
+  font-size: var(--font-size-xs);
+  font-weight: 300;
+  font-style: normal;
+}
+.nunito-normal-violet-eggplant-20px {
+  color: var(--violet-eggplant);
+  font-family: var(--font-family-nunito);
+  font-size: var(--font-size-xl2);
+  font-weight: 400;
+  font-style: normal;
+}
+.nunito-bold-clairvoyant-18px {
+  color: var(--clairvoyant);
+  font-family: var(--font-family-nunito);
+  font-size: var(--font-size-l);
+  font-weight: 700;
+  font-style: normal;
+}
+.nunito-semi-bold-white-16px {
+  color: var(--white);
+  font-family: var(--font-family-nunito);
+  font-size: var(--font-size-m);
+  font-weight: 600;
+  font-style: normal;
+}
+.nunito-normal-clairvoyant-12px {
+  color: var(--clairvoyant);
+  font-family: var(--font-family-nunito);
+  font-size: var(--font-size-s);
+  font-weight: 400;
+  font-style: normal;
+}
+.nunito-semi-bold-yellow-orange-16px {
+  color: var(--yellow-orange);
+  font-family: var(--font-family-nunito);
+  font-size: var(--font-size-m);
+  font-weight: 600;
+  font-style: normal;
+}
+.itim-normal-white-24px-2 {
+  color: var(--white-2);
+  font-family: var(--font-family-itim);
+  font-size: var(--font-size-xl3);
+  font-weight: 400;
+  font-style: normal;
+}
+.dmsans-normal-black-16px {
+  color: var(--black);
+  font-family: var(--font-family-dm_sans);
+  font-size: var(--font-size-m);
+  font-weight: 400;
+  font-style: normal;
+}
+.nunito-bold-violet-eggplant-30px {
+  color: var(--violet-eggplant);
+  font-family: var(--font-family-nunito);
+  font-size: var(--font-size-xxl2);
+  font-weight: 700;
+  font-style: normal;
+}
+.itim-normal-white-24px {
+  color: var(--white);
+  font-family: var(--font-family-itim);
+  font-size: var(--font-size-xl3);
+  font-weight: 400;
+  font-style: normal;
+}
+.nunito-normal-clairvoyant-10px {
+  color: var(--clairvoyant);
+  font-family: var(--font-family-nunito);
+  font-size: var(--font-size-xs);
+  font-weight: 400;
+  font-style: normal;
+}
+.nunito-normal-clairvoyant-16px {
+  color: var(--clairvoyant);
+  font-family: var(--font-family-nunito);
+  font-size: var(--font-size-m);
+  font-weight: 400;
+  font-style: normal;
+}
