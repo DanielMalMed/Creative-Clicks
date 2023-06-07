@@ -13,6 +13,7 @@ function Sign_in (props){
         e.preventDefault();
         
         await signup(username, email, password)
+        window.location = '/'
     }
     return (
         <div className="logo-div">

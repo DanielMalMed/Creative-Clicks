@@ -90,7 +90,7 @@ export default function ProfilePageOwnersView(props) {
                   {uiUxDesigner}
                 </div>
                 <h1 className="title" >
-                  {title}
+                  {title}{user && <span>{user.email} doritos</span>}
                 </h1>
                 <div className="img-bg" style={{ backgroundImage: `url(${imgBg})` }} >
                   <div className="img" style={{ backgroundImage: `url(${img})` }} ></div>
@@ -161,7 +161,7 @@ export default function ProfilePageOwnersView(props) {
                 <div className="posts" >
                   {posts}
                   <ProfilePosts /> 
-                  <button type="submit" onClick={() => window.location = "/tpostcreate"}>Create Post </button>
+                  {user && <button type="submit" onClick={() => window.location = "/tpostcreate"}>Create Post </button>}
                 </div>
                 <img
                   className="line-3-1"
