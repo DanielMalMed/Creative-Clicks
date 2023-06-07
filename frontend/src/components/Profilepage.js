@@ -90,7 +90,7 @@ export default function ProfilePageOwnersView(props) {
                   {uiUxDesigner}
                 </div>
                 <h1 className="title" >
-                 {user && <span>{user.email} doritos</span>}
+                 {user && <span>{user.email}</span>}
                 </h1>
                 <div className="img-bg" style={{ backgroundImage: `url(${imgBg})` }} >
                   <div className="img" style={{ backgroundImage: `url(${img})` }} ></div>
