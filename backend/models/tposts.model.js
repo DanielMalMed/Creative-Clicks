@@ -4,7 +4,8 @@ const Schema = mongoose.Schema;
 
 const tpostsSchema = new Schema({
     content: { type: String, required: true },
-    mood: { type: String, required: true }
+    mood: { type: String, required: true },
+    user_id: {type: String, required: true}
 }, 
     {
     timestamps: true,

@@ -20,9 +20,11 @@ function Feedsposts(props) {
         tposts: [],
     })
     const {user} = useAuthContext()
+  
+
     useEffect(() => {
         const fetchmyposts =  () => { 
-            axios.get('/tpost/', { headers : {"Authorization": `Bearer ${user.token}`}})
+            axios.get(`${process.env.REACT_APP_SERVER_URL}tpost`, { headers : {"Authorization": `Bearer ${user.token}`}})
             .then(response => {
                 setTposts({
                     ...tposts,

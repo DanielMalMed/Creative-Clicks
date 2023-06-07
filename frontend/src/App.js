@@ -1,6 +1,5 @@
-import { BrowserRouter as Router, Link, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import React from 'react';
-import ProfilePosts from './components/Profileposts';
 import Tpostcreate from './components/tpostcreate';
 import './App.css';
 import ProfilePageOwnersView from './components/Profilepage';
@@ -17,9 +16,9 @@ function App() {
       <Router>
         <Routes>
 
-          <Route path="/tpostcreate" element={<Tpostcreate {...profilePageOwnersViewData}/>} />
-          <Route path="/ProfilePageOwnersView" element={<ProfilePageOwnersView {...profilePageOwnersViewData} />} />
-          <Route path='/' element={<Landingpage />} />
+          <Route exact path="/tpostcreate" element={<Tpostcreate {...profilePageOwnersViewData}/>} />
+          <Route exact path="/ProfilePageOwnersView" element={<ProfilePageOwnersView {...profilePageOwnersViewData} />} />
+          <Route exact path='/' element={<Landingpage />} />
         </Routes>
 
       </Router>

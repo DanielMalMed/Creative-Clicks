@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5b8869a0.css",
+    "main.js": "/static/js/main.d0eef591.js",
+    "static/js/787.7ab137f9.chunk.js": "/static/js/787.7ab137f9.chunk.js",
+    "static/media/creative-clicks-logo.svg": "/static/media/creative-clicks-logo.aeff9d2b3a1d177997c0f7b60d91177f.svg",
+    "index.html": "/index.html",
+    "main.5b8869a0.css.map": "/static/css/main.5b8869a0.css.map",
+    "main.d0eef591.js.map": "/static/js/main.d0eef591.js.map",
+    "787.7ab137f9.chunk.js.map": "/static/js/787.7ab137f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5b8869a0.css",
+    "static/js/main.d0eef591.js"
+  ]
+}
