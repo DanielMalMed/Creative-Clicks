@@ -1,12 +1,12 @@
-/*import React from "react";
+import React from "react";
+import './homepage.css'
+// function App() {
+//   return <HomepageOwnersView {...homepageOwnersViewData} />;
+// }
 
-function App() {
-  return <HomepageOwnersView {...homepageOwnersViewData} />;
-}
+// export default App;
 
-export default App;
-
-function HomepageOwnersView(props) {
+export default function HomepageOwnersView(props) {
   const { logout, profilePhoto, chattykats, uiUxDesigner, chattyKats, imgBg, iconHome, place, profile, title, aboutUsWelcomeTo } = props;
 
   return (
@@ -71,29 +71,28 @@ function Group7() {
   );
 }
 
-const homepageOwnersViewData = {
-  logout: "logout.png",
-  profilePhoto: "profile-photo.png",
-  chattykats: "chattykats.png",
-  uiUxDesigner: "UI/UX Designer",
-  chattyKats: "Chatty kats",
-  imgBg: "img-bg.png",
-  iconHome: "home.png",
-  place: "Home",
-  profile: "Profile",
-  title: "About Us",
-  aboutUsWelcomeTo: (
-    <React.Fragment>
-      About Us:
-      <br />
-      <br />
-      Welcome to ChattyKats! This website was designed to help build communities by keeping them connected. This project is unique in
-      that it is coded 100% by students, who collaborated on this site with the singular goal of creating something both usable and user
-      friendly. We hope you enjoy our project &amp; don’t forget to leave a post if you would like to do so. Thank you for visiting our
-      website.
-      <br />
-      <br />- The ChattyKats Team
-    </React.Fragment>
-  ),
-};
-*/
+// const homepageOwnersViewData = {
+//   logout: "logout.png",
+//   profilePhoto: "profile-photo.png",
+//   chattykats: "chattykats.png",
+//   uiUxDesigner: "UI/UX Designer",
+//   chattyKats: "Chatty kats",
+//   imgBg: "img-bg.png",
+//   iconHome: "home.png",
+//   place: "Home",
+//   profile: "Profile",
+//   title: "About Us",
+//   aboutUsWelcomeTo: (
+//     <>
+//       About Us:
+//       <br />
+//       <br />
+//       Welcome to ChattyKats! This website was designed to help build communities by keeping them connected. This project is unique in
+//       that it is coded 100% by students, who collaborated on this site with the singular goal of creating something both usable and user
+//       friendly. We hope you enjoy our project &amp; don’t forget to leave a post if you would like to do so. Thank you for visiting our
+//       website.
+//       <br />
+//       <br />- The ChattyKats Team
+//     </>
+//   ),
+// };
