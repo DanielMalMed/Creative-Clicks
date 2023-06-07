@@ -178,4 +178,172 @@ export default function ProfilePageOwnersView(props) {
   }
 
 
-  
+  /*function ProfilePageOwnersView(props) {
+  const {
+    iconHome,
+    place,
+    profile,
+    creativeClicks,
+    profilePhoto,
+    uiUxDesigner,
+    title,
+    imgBg,
+    img,
+    about,
+    male,
+    bornJune32023,
+    sanDiegoState,
+    creativeclicksCcCom,
+    iconCall,
+    phone,
+    posts1,
+    posts2,
+  } = props;
+
+  return (
+    <div className="container-center-horizontal">
+      <div className="profile-page-owner-s-viewscreen">
+        <div className="menu">
+          <div className="overlap-group1">
+            <div className="bg"></div>
+            <div className="menu-name">
+              <div className="home">
+                <img className="home-1" src={iconHome} alt="Home" />
+                <div className="placenunito-semi-bold-white-16px">
+                  {place}
+                </div>
+              </div>
+              <div className="overlap-group-2">
+                <div className="profilenunito-semi-bold-yellow-orange-16px">
+                  {profile}
+                </div>
+                <div className="rectangle-289"></div>
+                <img className="person" src="person.svg" alt="person" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="flex-col">
+          <div className="overlap-group5">
+            <div className="small-profile">
+              <img className="creative-clicks" src={creativeClicks} alt="Creative Clicks" />
+              <div className="profile-photo" style={{ backgroundImage: `url(${profilePhoto})` }}></div>
+            </div>
+            <Group7 />
+          </div>
+          <div className="overlap-group6">
+            <img className="creative-clicks-logo" src="creative-clicks-logo.svg" alt="creative clicks logo" />
+            <div className="overlap-group-3">
+              <div className="uiux-designernunito-normal-violet-eggplant-16px">
+                {uiUxDesigner}
+              </div>
+              <h1 className="titlenunito-bold-violet-eggplant-30px">
+                {title}
+              </h1>
+              <div className="img-bg" style={{ backgroundImage: `url(${imgBg})` }}>
+                <div className="img" style={{ backgroundImage: `url(${img})` }}></div>
+              </div>
+            </div>
+          </div>
+          <div className="overlap-group-container">
+            <div className="overlap-group8">
+              <div className="about">
+                {about}
+              </div>
+              <div className="about-me">
+                <img className="person-1" src="person-1.svg" alt="person" />
+                <div className="malenunito-normal-clairvoyant-16px">
+                  {male}
+                </div>
+              </div>
+              <div className="overlap-group4">
+                <div className="line-1">
+                  <img className="line-2" src="line-2.svg" alt="Line 2" />
+                  <img className="line-3-1" src="line-2.svg" alt="Line 3" />
+                </div>
+                <div className="birth">
+                  <img className="cake" src="cake-1.svg" alt="cake" />
+                  <div className="born-june-3-2023nunito-normal-clairvoyant-16px">
+                    {bornJune32023}
+                  </div>
+                </div>
+              </div>
+              <div className="location">
+                <div className="location-1"></div>
+                <div className="san-diego-statenunito-normal-clairvoyant-16px">
+                  {sanDiegoState}
+                </div>
+              </div>
+              <div className="creative-clickscccomnunito-normal-clairvoyant-16px">
+                {creativeclicksCcCom}
+              </div>
+              <div className="line-4"></div>
+              <div className="phone-number">
+                <img className="call" src={iconCall} alt="Call" />
+                <div className="phonenunito-normal-clairvoyant-16px">
+                  {phone}
+                </div>
+              </div>
+            </div>
+            <div className="overlap-group-container-1nunito-extra-bold-violet-eggplant-20px">
+              <div className="overlap-group">
+                <div className="overlap-group-1">
+                  <div className="posts">
+                    {posts1}
+                  </div>
+                  <div className="frame-17">
+                    <img className="line" src="line-1.svg" alt="Line" />
+                  </div>
+                </div>
+                <img className="line-3" src="line-3.svg" alt="Line 3" />
+              </div>
+              <div className="overlap-group">
+                <div className="overlap-group-1">
+                  <div className="posts">
+                    {posts2}
+                  </div>
+                  <div className="frame-17">
+                    <img className="line" src="line-4.svg" alt="Line" />
+                  </div>
+                </div>
+                <img className="line-3" src="line-3.svg" alt="Line 3" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Group7() {
+  return (
+    <div className="group-7">
+      <div className="logoutdmsans-normal-black-16px">
+        Logout
+      </div>
+      <img className="line-5" src="line-5.svg" alt="Line" />
+    </div>
+  );
+}
+
+const profilePageOwnersViewData = {
+  iconHome: "home.png",
+  place: "Home",
+  profile: "Profile",
+  creativeClicks: "creative-clicks.png",
+  profilePhoto: "ellipse-58-1.png",
+  uiUxDesigner: "UI/UX Designer",
+  title: "Creative Clicks",
+  imgBg: "ellipse-22.png",
+  img: "ellipse-22.png",
+  about: "About",
+  male: "Male",
+  bornJune32023: "Born June 3, 2023",
+  sanDiegoState: "San Diego State",
+  creativeclicksCcCom: "CreativeClicks@cc.com",
+  iconCall: "call.png",
+  phone: "1(234)567-8910",
+  posts1: "Posts",
+  posts2: "Posts",
+}; */
