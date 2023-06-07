@@ -5,72 +5,98 @@ import { useAuthContext } from "../hook/useAuthContext";
 
 
 export default function ProfilePageOwnersView(props) {
-  const {
-    iconHome,
-    place,
-    profile,
-    creativeClicks,
-    profilePhoto,
-    uiUxDesigner,
-    title,
-    imgBg,
-    img,
-    about,
-    male,
-    bornJune32023,
-    sanDiegoState,
-    creativeclicksCcCom,
-    iconCall,
-    phone,
-    posts1,
-    posts2,
-  } = props;
-
-  return (
-    <div className="container-center-horizontal">
-      <div className="profile-page-owner-s-viewscreen">
-        <div className="menu">
-          <div className="overlap-group1">
-            <div className="bg"></div>
-            <div className="menu-name">
-              <div className="home">
-                <img className="home-1" src={iconHome} alt="Home" />
-                <div className="placenunito-semi-bold-white-16px">
-                  {place}
+    const {
+      iconHome,
+      place,
+      profile,
+      iconlyBoldTicket,
+      messages,
+      logout,
+      rectangle114,
+      ellipse58,
+      creativeClicks,
+      logOut,
+      uiUxDesigner,
+      title,
+      imgBg,
+      img,
+      about,
+      male,
+      bornJune32023,
+      sanDiegoState,
+      creativeclicksCcCom,
+      iconCall,
+      phone,
+      posts,
+    } = props;
+    const {user} = useAuthContext()
+    return (
+      <div className="container-center-horizontal">
+        <div className="profile-page-owner-s-view screen" >
+          <div className="menu" >
+            <div className="overlap-group3" >
+              <div className="bg" ></div>
+              <div className="menu-name" >
+                <div className="home" >
+                  <img className="icon-home"  src={iconHome} alt="icon-home" />
+                  <div className="place nunito-semi-bold-white-16px" >
+                    {place}
+                  </div>
+                </div>
+                <div className="overlap-group" >
+                  <div className="profile" >
+                    {profile}
+                  </div>
+                  <div className="rectangle-289" ></div>
+                  <img
+                    className="person"
+                    
+                    src="https://anima-uploads.s3.amazonaws.com/projects/647a8659bf8eb1cccd628690/releases/647a875c7163986472f1aca2/img/person.svg"
+                    alt="person"
+                  />
+                </div>
+                <div className="message" >
+                  <img className="iconly-bold-ticket"  src={iconlyBoldTicket} alt="Iconly/Bold/Ticket" />
+                  <div className="messages nunito-semi-bold-white-16px" >
+                    {messages}
+                  </div>
                 </div>
               </div>
-              <div className="overlap-group-2">
-                <div className="profilenunito-semi-bold-yellow-orange-16px">
-                  {profile}
+            </div>
+          </div>
+          <div className="flex-col" >
+            <div className="small-profile" >
+              <img className="logout"  src={logout} alt="Logout" />
+              <div className="overlap-group1" >
+                <div className="overlap-group-1" >
+                  <img className="rectangle-114"  src={rectangle114} alt="Rectangle 114" />
+                  <img className="ellipse-58"  src={ellipse58} alt="Ellipse 58" />
                 </div>
-                <div className="rectangle-289"></div>
-                <img className="person" src="person.svg" alt="person" />
+                <div className="text" >
+                  <img className="creative-clicks"  src={creativeClicks} alt="Creative Clicks" />
+                  <img className="log-out"  src={logOut} alt="Log out" />
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div className="flex-col">
-          <div className="overlap-group5">
-            <div className="small-profile">
-              <img className="creative-clicks" src={creativeClicks} alt="Creative Clicks" />
-              <div className="profile-photo" style={{ backgroundImage: `url(${profilePhoto})` }}></div>
-            </div>
-            <Group7 />
-          </div>
-          <div className="overlap-group6">
-            <img className="creative-clicks-logo" src="creative-clicks-logo.svg" alt="creative clicks logo" />
-            <div className="overlap-group-3">
-              <div className="uiux-designernunito-normal-violet-eggplant-16px">
-                {uiUxDesigner}
-              </div>
-              <h1 className="titlenunito-bold-violet-eggplant-30px">
-                {title}
-              </h1>
-              <div className="img-bg" style={{ backgroundImage: `url(${imgBg})` }}>
-                <div className="img" style={{ backgroundImage: `url(${img})` }}></div>
+            <div className="overlap-group6" >
+              <img
+                className="creative-clicks-logo"
+                
+                src="https://anima-uploads.s3.amazonaws.com/projects/647a8659bf8eb1cccd628690/releases/647b73e23710fef232e24b90/img/creative-clicks-logo.svg"
+                alt="creative clicks logo"
+              />
+              <div className="overlap-group2" >
+                <div className="uiux-designer" >
+                  {uiUxDesigner}
+                </div>
+                <h1 className="title" >
+                  {title}{user && <span>{user.email} doritos</span>}
+                </h1>
+                <div className="img-bg" style={{ backgroundImage: `url(${imgBg})` }} >
+                  <div className="img" style={{ backgroundImage: `url(${img})` }} ></div>
+                </div>
               </div>
             </div>
-          </div>
             <div className="overlap-group-container" >
               <div className="overlap-group7" >
                 <div className="about" >
