@@ -9,7 +9,9 @@ function Login (props) {
 
     const handleSubmit = async (e) =>{
         e.preventDefault();
-        await login(email, password);
+        await login(email, password); 
+        if(login) {window.location = "/ProfilePageOwnersView"}
+        
     }
     return(
         <div className="logo-div">

@@ -1,5 +1,8 @@
+const requireAuth = require('../middleware/requireAuth');
 //require express and the model/schema
 const router = require('express').Router();
+router.use(requireAuth)
+
 let Tposts = require('../models/tposts.model');
 
 //GET route

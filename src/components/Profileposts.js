@@ -1,6 +1,9 @@
-import React, { useState, useEffect} from "react";
+import { useEffect, useState } from "react";
+import { useAuthContext } from "../hook/useAuthContext";
 import axios from "axios";
-function Feedsposts(props) {
+
+
+function ProfilePosts(props) {
 
     return (
         <>
@@ -12,14 +15,14 @@ function Feedsposts(props) {
     )
     }
 
-
-function ProfilePosts(props) {
+function Feedsposts(props) {
     const [tposts, setTposts] = useState({
         tposts: [],
     })
-
+    const {user} = useAuthContext()
     useEffect(() => {
-        axios.get('http://localhost:5001/tpost/')
+        const fetchmyposts =  () => { 
+            axios.get('/tpost/', { headers : {"Authorization": `Bearer ${user.token}`}})
             .then(response => {
                 setTposts({
                     ...tposts,
@@ -29,11 +32,15 @@ function ProfilePosts(props) {
             .catch((error) => {
                 console.log(error);
             })
-    }, [])
+        }
+        if (user) {
+            fetchmyposts()
+        }
+    }, [user])
 
     const tpostsList = () => {
         return tposts.tposts.map(currenttpost => {
-            return <Feedsposts tpost={currenttpost}  key={currenttpost._id} />
+            return <ProfilePosts tpost={currenttpost}  key={currenttpost._id} />
         })
     }
     return(
@@ -46,4 +53,9 @@ function ProfilePosts(props) {
     )
 }
 
-export default ProfilePosts
+export default Feedsposts
+
+
+
+
+

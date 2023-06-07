@@ -1,6 +1,7 @@
 import React from "react";
 import ProfilePosts from "./Profileposts";
 import '../App.css';
+import { useAuthContext } from "../hook/useAuthContext";
 
 
 export default function ProfilePageOwnersView(props) {
@@ -28,7 +29,7 @@ export default function ProfilePageOwnersView(props) {
       phone,
       posts,
     } = props;
-  
+    const {user} = useAuthContext()
     return (
       <div className="container-center-horizontal">
         <div className="profile-page-owner-s-view screen" >

@@ -1,71 +1,83 @@
-import React, {useState} from "react";
-import axios from "axios";
-
+import React, { useState } from "react";
+import { useAuthContext } from "../hook/useAuthContext";
 
 function Tpostcreate(props) {
-    const {
-        iconHome,
-        place,
-        profile,
-        iconlyBoldTicket,
-        messages,
-        logout,
-        rectangle114,
-        ellipse58,
-        creativeClicks,
-        logOut,
-        uiUxDesigner,
-        title,
-        imgBg,
-        img,
-        about,
-        male,
-        bornJune32023,
-        sanDiegoState,
-        creativeclicksCcCom,
-        iconCall,
-        phone,
-        posts,
-      } = props;
-    let [tpost, setTpost] = useState ({
-        content:'',
-        mood:''
+  const {user} = useAuthContext()
+  const {
+    iconHome,
+    place,
+    profile,
+    iconlyBoldTicket,
+    messages,
+    logout,
+    rectangle114,
+    ellipse58,
+    creativeClicks,
+    logOut,
+    uiUxDesigner,
+    title,
+    imgBg,
+    img,
+    about,
+    male,
+    bornJune32023,
+    sanDiegoState,
+    creativeclicksCcCom,
+    iconCall,
+    phone,
+  } = props;
+  let [tpost, setTpost] = useState({
+    content: '',
+    mood: ''
+  })
+
+  const onChangeContent = (e) => {
+    setTpost({ ...tpost, content: e.target.value })
+  }
+
+  const onChangeMood = (e) => {
+    setTpost({ ...tpost, mood: e.target.value })
+  }
+
+  const onSubmit = async(e) => {
+    e.preventDefault();
+
+    setTpost({
+      ...tpost,
+      content: tpost.content
     })
 
-    const onChangeContent = (e) => {
-        setTpost({ ...tpost, content: e.target.value})
+    setTpost({
+      ...tpost,
+      mood: tpost.mood
+    })
+
+    const response = await fetch ('/tpost/add', {
+      method: 'POST',
+      body: JSON.stringify(tpost),
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${user.token}`
+      }
+    })
+     ;
+    if (response.ok){
+          console.log(tpost)
+
+    window.location = "/ProfilePageOwnersView"
     }
 
-    const onChangeMood = (e) => {
-        setTpost({ ...tpost, mood: e.target.value})
-    }
-
-    const onSubmit = (e) => {
-        e.preventDefault();
-
-        setTpost({...tpost,
-        content: tpost.content})
-
-        setTpost({...tpost,
-            mood: tpost.mood})
-
-            axios.post('http://localhost:5001/tpost/add', tpost)
-            .then(res => console.log(res.data));
-
-            console.log(tpost)
-
-            window.location = "/ProfilePageOwnersView"
-    }
-    return(
-        <>
-              <div className="container-center-horizontal">
+  }
+  return (
+    <>
+      <div className="container-center-horizontal">
         <div className="profile-page-owner-s-view screen" >
           <div className="menu" >
             <div className="overlap-group3" >
               <div className="bg" ></div>
               <div className="menu-name" >
                 <div className="home" >
-                  <img className="icon-home"  src={iconHome} alt="icon-home" />
+                  <img className="icon-home" src={iconHome} alt="icon-home" />
                   <div className="place nunito-semi-bold-white-16px" >
                     {place}
                   </div>
@@ -77,13 +89,13 @@ function Tpostcreate(props) {
                   <div className="rectangle-289" ></div>
                   <img
                     className="person"
-                    
+
                     src="https://anima-uploads.s3.amazonaws.com/projects/647a8659bf8eb1cccd628690/releases/647a875c7163986472f1aca2/img/person.svg"
                     alt="person"
                   />
                 </div>
                 <div className="message" >
-                  <img className="iconly-bold-ticket"  src={iconlyBoldTicket} alt="Iconly/Bold/Ticket" />
+                  <img className="iconly-bold-ticket" src={iconlyBoldTicket} alt="Iconly/Bold/Ticket" />
                   <div className="messages nunito-semi-bold-white-16px" >
                     {messages}
                   </div>
@@ -93,22 +105,22 @@ function Tpostcreate(props) {
           </div>
           <div className="flex-col" >
             <div className="small-profile" >
-              <img className="logout"  src={logout} alt="Logout" />
+              <img className="logout" src={logout} alt="Logout" />
               <div className="overlap-group1" >
                 <div className="overlap-group-1" >
-                  <img className="rectangle-114"  src={rectangle114} alt="Rectangle 114" />
-                  <img className="ellipse-58"  src={ellipse58} alt="Ellipse 58" />
+                  <img className="rectangle-114" src={rectangle114} alt="Rectangle 114" />
+                  <img className="ellipse-58" src={ellipse58} alt="Ellipse 58" />
                 </div>
                 <div className="text" >
-                  <img className="creative-clicks"  src={creativeClicks} alt="Creative Clicks" />
-                  <img className="log-out"  src={logOut} alt="Log out" />
+                  <img className="creative-clicks" src={creativeClicks} alt="Creative Clicks" />
+                  <img className="log-out" src={logOut} alt="Log out" />
                 </div>
               </div>
             </div>
             <div className="overlap-group6" >
               <img
                 className="creative-clicks-logo"
-                
+
                 src="https://anima-uploads.s3.amazonaws.com/projects/647a8659bf8eb1cccd628690/releases/647b73e23710fef232e24b90/img/creative-clicks-logo.svg"
                 alt="creative clicks logo"
               />
@@ -132,7 +144,7 @@ function Tpostcreate(props) {
                 <div className="about-me" >
                   <img
                     className="icon-user"
-                    
+
                     src="https://anima-uploads.s3.amazonaws.com/projects/647a8659bf8eb1cccd628690/releases/647a875c7163986472f1aca2/img/person-1.svg"
                     alt="icon-user"
                   />
@@ -144,13 +156,13 @@ function Tpostcreate(props) {
                   <div className="line" >
                     <img
                       className="line-2"
-                      
+
                       src="https://anima-uploads.s3.amazonaws.com/projects/647a8659bf8eb1cccd628690/releases/647a875c7163986472f1aca2/img/line-2.svg"
                       alt="Line 2"
                     />
                     <img
                       className="line-3"
-                      
+
                       src="https://anima-uploads.s3.amazonaws.com/projects/647a8659bf8eb1cccd628690/releases/647a875c7163986472f1aca2/img/line-2.svg"
                       alt="Line 3"
                     />
@@ -158,7 +170,7 @@ function Tpostcreate(props) {
                   <div className="birth" >
                     <img
                       className="cake"
-                      
+
                       src="https://anima-uploads.s3.amazonaws.com/projects/647a8659bf8eb1cccd628690/releases/647b73e23710fef232e24b90/img/cake.svg"
                       alt="cake"
                     />
@@ -178,7 +190,7 @@ function Tpostcreate(props) {
                 </div>
                 <div className="line-1" ></div>
                 <div className="phone-number" >
-                  <img className="icon-call"  src={iconCall} alt="icon-call" />
+                  <img className="icon-call" src={iconCall} alt="icon-call" />
                   <div className="phone nunito-normal-clairvoyant-16px" >
                     {phone}
                   </div>
@@ -186,38 +198,38 @@ function Tpostcreate(props) {
               </div>
               <div className="overlap-group4" >
                 <div className="posts" >
-                <form onSubmit={onSubmit}>
-                <div>
-                <label>Whats on your mind today?</label>
-                <br></br>
-                <input type="text"
+                  <form onSubmit={onSubmit}>
+                    <div>
+                      <label>Whats on your mind today?</label>
+                      <br></br>
+                      <input type="text"
                         required
                         value={tpost.content}
-                        onChange={onChangeContent}/>
-                </div>
-                <div>
-                    <label>Your Mood:</label>
-                    <select 
+                        onChange={onChangeContent} />
+                    </div>
+                    <div>
+                      <label>Your Mood:</label>
+                      <select
                         required
                         value={tpost.mood}
                         onChange={onChangeMood}
-                        >
-                            <option></option>
-                            <option>🥰</option>
-                            <option>👿</option>
-                            <option>😠 </option>
-                            <option>😭</option>
+                      >
+                        <option></option>
+                        <option>🥰</option>
+                        <option>👿</option>
+                        <option>😠 </option>
+                        <option>😭</option>
 
-                        </select>
-                </div>
-                <br></br>
-                <input type="submit" value="Create new post"/>
-            </form>
-        
+                      </select>
+                    </div>
+                    <br></br>
+                    <input type="submit" value="Create new post" />
+                  </form>
+
                 </div>
                 <img
                   className="line-3-1"
-                  
+
                   src="https://anima-uploads.s3.amazonaws.com/projects/647a8659bf8eb1cccd628690/releases/647a875c7163986472f1aca2/img/line-3.svg"
                   alt="Line 3"
                 />
@@ -226,8 +238,8 @@ function Tpostcreate(props) {
           </div>
         </div>
       </div>
-        </>
-    )
+    </>
+  )
 }
 
 export default Tpostcreate
