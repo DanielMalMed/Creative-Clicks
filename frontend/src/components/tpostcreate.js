@@ -126,10 +126,9 @@ function Tpostcreate(props) {
               />
               <div className="overlap-group2" >
                 <div className="uiux-designer" >
-                  {uiUxDesigner}
                 </div>
                 <h1 className="title" >
-                  {title}
+                {user && <span>{user.email}</span>}
                 </h1>
                 <div className="img-bg" style={{ backgroundImage: `url(${imgBg})` }} >
                   <div className="img" style={{ backgroundImage: `url(${img})` }} ></div>

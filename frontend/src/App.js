@@ -11,8 +11,8 @@ import Ppostcreate from './components/ppostcreate';
 
 function App() {
 
- 
- 
+
+
   return (
     <>
       <Router>
@@ -63,7 +63,7 @@ const homepageOwnersViewData = {
   profilePhoto: "profile-photo.png",
   chattykats: "chattykats.png",
   uiUxDesigner: "UI/UX Designer",
-  chattyKats: "/logo/ChattyKat.png",
+  chattyKats: "Chatty kats",
   imgBg: "img-bg.png",
   iconHome: "https://anima-uploads.s3.amazonaws.com/projects/647a8659bf8eb1cccd628690/releases/647a875c7163986472f1aca2/img/home@2x.png",
   place: "Home",

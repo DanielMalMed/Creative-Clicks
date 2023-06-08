@@ -12,7 +12,7 @@ app.use(cors());
 app.use(express.json());
 
 const uri = process.env.ATLAS_URI;
-mongoose.connect("mongodb+srv://lijalem:lijalem123@cluster0.zg9sm3i.mongodb.net/", { useNewUrlParser: true });
+mongoose.connect("mongodb+srv://Danon:Danonino@cluster0.dntmts1.mongodb.net/?retryWrites=true&w=majority", { useNewUrlParser: true });
 const connection = mongoose.connection;
 
 // serve static front end in production mode
