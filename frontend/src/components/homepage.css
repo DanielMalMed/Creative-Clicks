@@ -1,263 +1,253 @@
-/* .profilePhotoIcon {
-  position: absolute;
-  top: 10px;
-  left: 101px;
-  width: 210px;
-  height: 183px;
-}
-.chattykats,
-.logoutIcon,
-.text {
-  position: absolute;
-  left: 0;
-  width: 172px;
-  height: 16px;
-}
-.chattykats {
-  top: 0;
-  display: inline-block;
-}
-.logoutIcon,
-.text {
-  top: 26px;
-}
-.logoutIcon {
-  height: 11.1%;
-  width: 6.79%;
-  top: 16.81%;
-  right: -370.09%;
-  bottom: 72.09%;
-  left: 463.3%;
-  max-width: 100%;
-  overflow: hidden;
-  max-height: 100%;
-  opacity: 0.4;
-}
-.smallProfile {
-  position: absolute;
-  top: -10px;
-  left: 1170px;
-  width: 311px;
-  height: 183px;
-  font-size: var(--font-size-5xl);
-}
-.chattykatHomepage {
-  position: absolute;
-  top: 94px;
-  left: 250px;
-  border-radius: var(--br-3xs);
-  background: linear-gradient(#fff, #fff), #c4c4c4;
-  width: 1151px;
-  height: 403px;
-}
-.chattykatHomepage1 {
-  position: absolute;
-  top: 81px;
-  left: 239px;
-  border-radius: var(--br-8xs);
-  width: 1151px;
-  height: 280px;
-  object-fit: cover;
-}
-.title,
-.uiuxDesigner {
-  position: absolute;
-  width: 118.91px;
-  height: 22.7px;
-}
-.uiuxDesigner {
-  top: 0;
-  left: 0;
-  display: inline-block;
-  opacity: 0.7;
-}
-.title {
-  top: 231.89px;
-  left: 332.54px;
-}
-.chattyKats,
-.name {
-  position: absolute;
-  width: 251.41px;
-  height: 60.84px;
-}
-.chattyKats {
-  top: 0;
-  left: 0;
-  display: inline-block;
-}
-.name {
-  top: 193.41px;
-  left: 331.63px;
-  font-size: var(--font-size-11xl);
-}
-.imgBgIcon {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 519.5px;
-  height: 448px;
-}
-.profileName {
-  top: 199px;
-  left: 121px;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  width: 583.04px;
-  height: 448px;
-  color: var(--color-darkmagenta);
-}
-.bg,
-.profile1,
-.profileName {
-  position: absolute;
-}
-.bg {
-  top: 0;
-  left: 0;
-  background-color: var(--color-midnightblue);
-  width: 218px;
-  height: 1186px;
-}
-.profile1 {
-  top: 1px;
-  left: 38px;
-  font-weight: 600;
-}
-.personIcon {
-  top: 0;
-  left: 0;
-  width: 24px;
-  height: 24px;
-  overflow: hidden;
-}
-.home1,
-.personIcon,
-.profile {
-  position: absolute;
-}
-.profile {
-  top: 53px;
-  left: 0;
-  width: 86px;
-  height: 24px;
-}
-.home1 {
-  top: 0;
-  left: 36px;
-  font-weight: 600;
-  background: linear-gradient(#fbb03b, #fbb03b), #fff;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  opacity: 0.7;
-}
-.homeIcon {
-  position: absolute;
-  height: 77.27%;
-  width: 25%;
-  top: 4.55%;
-  right: 75%;
-  bottom: 18.18%;
-  left: 0;
-  max-width: 100%;
-  overflow: hidden;
-  max-height: 100%;
-  opacity: 0.8;
-}
-.home,
-.menu,
-.menuName {
-  position: absolute;
-  top: 0;
-  left: 2px;
-  width: 80px;
-  height: 22px;
-}
-.menu,
-.menuName {
-  top: 193px;
-  left: 39px;
-  width: 86px;
-  height: 77px;
-}
-.menu {
-  top: -10px;
-  left: 0;
-  width: 218px;
-  height: 1186px;
-  color: var(--color-gainsboro-200);
-}
-.homepageOwnersViewChild {
-  position: absolute;
-  top: 512px;
-  left: 408px;
-  border-radius: var(--br-3xs);
-  background-color: var(--primary-contrast);
-  width: 854px;
-  height: 483px;
-}
-.aboutUs {
-  position: absolute;
-  top: 535px;
-  left: 424px;
-  font-size: var(--font-size-17xl);
-  font-weight: 800;
-  color: var(--color-darkmagenta);
-  display: inline-block;
-  width: 177px;
-  height: 33px;
-}
-.homepageOwnersViewItem {
-  position: absolute;
-  top: 582.6px;
-  left: 407.6px;
-  border-top: 0.8px solid var(--text);
-  box-sizing: border-box;
-  width: 848.8px;
-  height: 0.8px;
-  opacity: 0.1;
-}
-.lineIcon,
-.logout {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.lineIcon {
-  left: 91px;
-  width: 18px;
-  height: 19px;
-  overflow: hidden;
-}
-.logoutParent {
-  position: absolute;
-  top: 51px;
-  left: 1216px;
-  width: 109px;
-  height: 21px;
-  font-family: var(--font-dm-sans);
-}
-.blankLine {
-  margin: 0;
-}
-.aboutUsWelcomeContainer {
-  position: absolute;
-  top: 604px;
-  left: 466px;
-  font-family: var(--font-dm-sans);
-  white-space: pre-wrap;
-  display: inline-block;
-  width: 732px;
-  height: 328px;
+
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,700,800,600|DM+Sans:400");
+
+.screen a {
+  display: contents;
+  text-decoration: none;
 }
 
-.logout-1 {
+.container-center-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  pointer-events: none;
+  width: 100%;
+}
+
+.container-center-horizontal > * {
+  flex-shrink: 0;
+  pointer-events: auto;
+}
+
+.homepage-owner-s-view {
+  align-items: flex-start;
+  background-color: var(--black-haze);
+  border: 1px none;
+  display: flex;
+  overflow: hidden;
+  width: 1440px;
+}
+
+.overlap-group20 {
+  height: 1186px;
+  margin-top: -10px;
+  position: relative;
+  width: 1481px;
+}
+
+.small-profile1 {
+  align-items: flex-end;
+  display: flex;
+  gap: 2065px;
+  height: 183px;
+  left: 1170px;
+  min-width: 311px;
+  position: absolute;
+  top: 0;
+}
+
+.logout1 {
+  height: 20px;
+  margin-bottom: -328.07px;
+  margin-left: -2052px;
+  width: 21px;
+}
+
+.overlap-groupA {
+  height: 173px;
+  position: relative;
+  width: 236px;
+}
+
+.profile-photoA {
+  height: 173px;
+  left: 67px;
+  position: absolute;
+  top: 0;
+  width: 169px;
+}
+
+.chatty-kats {
+  height: 22px;
+  left: 0;
+  position: absolute;
+  top: 23px;
+  width: 122px;
+}
+
+.chattykat-homepage {
+  background-color: var(--white);
+  border-radius: 10px;
+  height: 403px;
+  left: 250px;
+  position: absolute;
+  top: 104px;
+  width: 1151px;
+}
+
+.chattykat-homepage-1 {
+  height: 280px;
+  left: 250px;
+  position: absolute;
+  top: 104px;
+  width: 1151px;
+}
+
+.overlap-groupZ {
+  height: 448px;
+  left: 121px;
+  position: absolute;
+  top: 209px;
+  width: 583px;
+}
+
+.uiux-designernunito-normal-violet-eggplant-16px {
+  left: 333px;
+  letter-spacing: 0;
+  line-height: normal;
+  opacity: 0.7;
+  position: absolute;
+  top: 232px;
+  width: 119px;
+}
+
+.chatty-kats-1nunito-bold-violet-eggplant-30px {
+  left: 332px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 193px;
+  width: 251px;
+}
+
+.img-big {
+  height: 448px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 520px;
+}
+
+.menu1 {
+  align-items: flex-start;
+  background-color: var(--clairvoyant);
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+  left: 0;
+  min-height: 1186px;
+  padding: 193px 39px;
+  position: absolute;
+  top: 0;
+  width: 218px;
+}
+
+.home1 {
+  align-items: flex-start;
+  display: flex;
+  gap: 16px;
+  height: 22px;
+  margin-left: 2px;
+  min-width: 82px;
+}
+
+.icon-home1 {
+  height: 17px;
+  margin-top: 1px;
+  width: 20px;
+}
+
+.placenunito-semi-bold-yellow-orange-16px{
+  letter-spacing: 0;
+  line-height: normal;
+  min-height: 22px;
+  opacity: 0.7;
+}
+
+.profile1 {
+  align-items: center;
+  display: flex;
+  gap: 14px;
+  min-width: 88px;
+}
+
+.icon-user {
+  height: 24px;
+  width: 24px;
+}
+
+.profile-10 {
+  color: 
+#d9d9d9;
+  font-family: var(--font-family-nunito);
+  font-size: var(--font-size-m);
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: normal;
+  min-height: 22px;
+  min-width: 48px;
+}
+
+.rectangle-292 {
+  background-color: var(--white);
+  border-radius: 10px;
+  height: 483px;
+  left: 408px;
+  position: absolute;
+  top: 522px;
+  width: 854px;
+}
+
+.titleZ {
+  color: var(--violet-eggplant);
+  font-family: var(--font-family-nunito);
+  font-size: var(--font-size-xxl);
+  font-weight: 800;
+  left: 424px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 544px;
+  white-space: nowrap;
+  width: 177px;
+}
+
+.line-30 {
+  height: 1px;
+  left: 408px;
+  position: absolute;
+  top: 592px;
+  width: 848px;
+}
+
+.about-us-welcome-todmsans-normal-black-16px {
+  left: 466px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 613px;
+  width: 732px;
+}
+
+.group-70 {
+  align-items: flex-start;
+  display: flex;
+  gap: 40px;
+  height: 21px;
+  left: 1216px;
+  min-width: 111px;
+  position: absolute;
+  top: 61px;
+}
+
+.logout-1dmsans-normal-black-16px {
   letter-spacing: 0;
   line-height: normal;
   min-height: 21px;
   min-width: 51px;
 }
 
-.line {
+.lineC {
   height: 19px;
   width: 18px;
-} */
+}
