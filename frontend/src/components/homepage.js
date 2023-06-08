@@ -1,10 +1,5 @@
 import React from "react";
-import './homepage.css'
-// function App() {
-//   return <HomepageOwnersView {...homepageOwnersViewData} />;
-// }
-
-// export default App;
+import './App.css';
 
 export default function HomepageOwnersView(props) {
   const { logout, profilePhoto, chattykats, uiUxDesigner, chattyKats, imgBg, iconHome, place, profile, title, aboutUsWelcomeTo } = props;
