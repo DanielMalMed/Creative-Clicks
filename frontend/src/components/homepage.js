@@ -1,5 +1,6 @@
 import React from "react";
 import './homepage.css'
+import { useLogout } from "../hook/useLogout";
 
 export default function HomepageOwnersView(props) {
   const { logout, profilePhoto, chattykats, uiUxDesigner, chattyKats, imgBg, iconHome, place, profile, title, aboutUsWelcomeTo } = props;
@@ -56,10 +57,15 @@ export default function HomepageOwnersView(props) {
 }
 
 function Group7() {
+  const { logout } = useLogout()
+  const handleClick = () => { 
+    logout();
+    window.location = "/ "
+  }
   return (
     <div className="group-70">
       <div className="logout-1dmsans-normal-black-16px">
-        Logout
+        <button onClick={handleClick}>Logout</button>
       </div>
       <img className="lineC" src="line.svg" alt="Line" />
     </div>
