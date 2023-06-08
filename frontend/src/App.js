@@ -63,7 +63,7 @@ const homepageOwnersViewData = {
   profilePhoto: "profile-photo.png",
   chattykats: "chattykats.png",
   uiUxDesigner: "UI/UX Designer",
-  chattyKats: "Chatty kats",
+  chattyKats: "/logo/ChattyKat.png",
   imgBg: "img-bg.png",
   iconHome: "home.png",
   place: "Home",
