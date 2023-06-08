@@ -1,5 +1,5 @@
-import"./HomepageOwnersView.module.css";
-
+import './homepage.css';
+import HomeFeeds from "./homeposts";
 
 const HomepageOwnersView = () => {
   return (
