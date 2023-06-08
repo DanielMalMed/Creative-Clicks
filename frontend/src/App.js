@@ -6,6 +6,7 @@ import './App.css';
 import ProfilePageOwnersView from './components/Profilepage';
 import Landingpage from './components/landingpage';
 import HomepageOwnersView from './components/homepage'
+import Ppostcreate from './components/ppostcreate';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Route exact path="/tpostcreate" element={<Tpostcreate {...profilePageOwnersViewData}/>} />
           <Route exact path="/ProfilePageOwnersView" element={<ProfilePageOwnersView {...profilePageOwnersViewData} />} />
           <Route exact path='/' element={<Landingpage />} />
+          <Route exact path='/ppostcreate' element={<Ppostcreate />} />
           <Route exact path='/Homepage' element={<HomepageOwnersView {...homepageOwnersViewData}/>} />
         </Routes>
 

@@ -1,5 +1,6 @@
 import React from "react";
 import './homepage.css'
+import HomeFeeds from "./homeposts";
 // function App() {
 //   return <HomepageOwnersView {...homepageOwnersViewData} />;
 // }
@@ -48,6 +49,7 @@ export default function HomepageOwnersView(props) {
           <div className="rectangle-292"></div>
           <h1 className="title">
             {title}
+            <HomeFeeds />
           </h1>
           <img className="line-3" src="line-3.svg" alt="Line 3" />
           <Group7 />

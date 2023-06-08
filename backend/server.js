@@ -26,9 +26,11 @@ connection.once('open', () => {
 
 const tpostRouter = require('./routes/tpost')
 const userRouter = require('./routes/user')
+const ppostRouter = require('./routes/ppost')
 
 app.use('/tpost', tpostRouter);
 app.use('/user', userRouter);
+app.use('/ppost', ppostRouter)
 
 
 
