@@ -30,7 +30,7 @@ function Sign_in (props){
                     <button type="submit" disabled={isLoading}> Sign In</button>
 
             </form>
-            <button className="link-btn" onClick={() => props.onFormSwitch('login')}> Alredy have an account? Login in here. </button>
+            <button className="link-btn" onClick={() => props.onFormSwitch('login')}> Already have an account? Login in here. </button>
             {error && <div>{error}</div>}
         </div>
         </div>
