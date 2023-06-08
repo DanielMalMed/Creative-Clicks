@@ -11,8 +11,8 @@ export default function HomepageOwnersView(props) {
           <div className="small-profile1">
             <img className="logout1" src={logout} alt="Logout" />
             <div className="overlap-groupA">
-              <img className="profile-photoA" src={profilePhoto} alt="Profile photo" />
-              <img className="chatty-kats" src={chattykats} alt="ChattyKats" />
+              <img className="profile-photoA" src='frontend/src/components/logo/logo.png' alt="Profile photo" />
+              <img className="chatty-kats" src='frontend/src/components/logo/ChattyKat.png' alt="ChattyKats" />
             </div>
           </div>
           <div className="chattykat-homepage"></div>
