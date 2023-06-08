@@ -34,7 +34,7 @@ export default function HomepageOwnersView(props) {
               </div>
             </div>
             <div className="profile1">
-              <img className="icon-user" src="person.svg" alt="icon-user" />
+              <img className="icon-user" src="https://anima-uploads.s3.amazonaws.com/projects/647a8659bf8eb1cccd628690/releases/647a875c7163986472f1aca2/img/person.svg" alt="icon-user" />
               <div className="profile-10">
                 {profile}
               </div>
