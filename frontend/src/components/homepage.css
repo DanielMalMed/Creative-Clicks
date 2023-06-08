@@ -54,9 +54,16 @@
 }
 
 .overlap-groupA {
-  height: 173px;
-  position: relative;
-  width: 236px;
+    background-color: var(--white);
+    border-radius: 20px;
+    height: 20px;
+    margin-top: 50px;
+    position: relative;
+    width: 100px;
+    center: auto;
+    left: 2000px;
+    margin: auto;
+
 }
 
 .profile-photoA {
@@ -69,26 +76,17 @@
 
 .chatty-kats {
   height: 22px;
-  left: 0;
+  left: 10px;
   position: absolute;
   top: 23px;
   width: 122px;
 }
 
-.chattykat-homepage {
-  width: 1151px;
-  height: 280px;
-  margin: 81px 50px 151px 21px;
-  border-radius: 5px;
-  background-color: #31e7dc;
-}
-
 .chattykat-homepage-1 {
- width: 519.5px;
-  height: 448px;
-  flex-grow: 0;
-  margin: 0 63.5px 0 0;
-  padding: 231.9px 39.5px 79px 303px;
+  
+  margin-left: 400px;
+  background-color: #31e7dc;
+  text-align: right;
 }
 
 .overlap-groupZ {
@@ -103,35 +101,35 @@
   left: 333px;
   letter-spacing: 0;
   line-height: normal;
-  opacity: 0.7;
+  opacity: 0.3;
   position: absolute;
   top: 232px;
   width: 119px;
 }
 
 .chatty-kats-1nunito-bold-violet-eggplant-30px {
-  width: 251.4px;
-  height: 60.8px;
-  flex-grow: 0;
-  margin: 193.4px 0 193.8px 331.6px;
-  font-family: Nunito;
-  font-size: 30px;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: left;
-  color: #a303a0;
+  idth: 500px;
+    height: 500px;
+    margin: 500px;
+    font-family: Nunito;
+    font-size: 15px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: right;
+    color: #a303a0;
 }
 
 
 .img-big {
-  height: 448px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 520px;
+  margin: 500px;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 
 .menu1 {
