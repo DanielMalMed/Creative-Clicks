@@ -16,7 +16,7 @@ export default function HomepageOwnersView(props) {
             </div>
           </div>
           <div className="chattykat-homepage"></div>
-          <img className="chattykat-homepage-1" src="chattykat-homepage.svg" alt="chattykat homepage " />
+          <img className="chattykat-homepage-1" src="frontend/src/components/logo/ChattyKat.png" alt="chattykat homepage " />
           <div className="overlap-groupZ">
             <div className="uiux-designernunito-normal-violet-eggplant-16px">
               {uiUxDesigner}
