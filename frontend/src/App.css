@@ -304,7 +304,7 @@ button {
 }
 
 .log-out {
-  height: 9px;
+  height: 10px;
   margin-left: 10.79px;
   width: 33px;
 }
@@ -352,7 +352,7 @@ button {
   color: var(--violet-eggplant);
   font-family: var(--font-family-nunito);
   font-size: var(--font-size-xxl);
-  font-weight: 700;
+  font-weight: 400;
   left: 159px;
   letter-spacing: 0;
   line-height: normal;
