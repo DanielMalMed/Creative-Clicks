@@ -59,13 +59,13 @@ const profilePageOwnersViewData = {
 };
 
 const homepageOwnersViewData = {
-  logout: "logout.png",
+  logout: "https://anima-uploads.s3.amazonaws.com/projects/647a8659bf8eb1cccd628690/releases/647b73e23710fef232e24b90/img/log-out@2x.png",
   profilePhoto: "profile-photo.png",
   chattykats: "chattykats.png",
   uiUxDesigner: "UI/UX Designer",
   chattyKats: "Chatty kats",
   imgBg: "img-bg.png",
-  iconHome: "home.png",
+  iconHome: "https://anima-uploads.s3.amazonaws.com/projects/647a8659bf8eb1cccd628690/releases/647a875c7163986472f1aca2/img/home@2x.png",
   place: "Home",
   profile: "Profile",
   title: "About Us",

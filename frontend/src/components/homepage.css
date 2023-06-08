@@ -54,9 +54,12 @@
 }
 
 .overlap-groupA {
-  height: 173px;
-  position: relative;
-  width: 236px;
+    background-color: var(--white);
+    border-radius: 10px;
+    height: 403px;
+    margin-top: 26px;
+    position: relative;
+    width: 1151px;
 }
 
 .profile-photoA {
@@ -75,20 +78,12 @@
   width: 122px;
 }
 
-.chattykat-homepage {
-  width: 1151px;
-  height: 280px;
-  margin: 81px 50px 151px 21px;
+.chattykat-homepage-1 {
+  max-width: 100%;
+  max-height: 100%;
+  margin: 81px 50px 151px 0px;
   border-radius: 5px;
   background-color: #31e7dc;
-}
-
-.chattykat-homepage-1 {
- width: 519.5px;
-  height: 448px;
-  flex-grow: 0;
-  margin: 0 63.5px 0 0;
-  padding: 231.9px 39.5px 79px 303px;
 }
 
 .overlap-groupZ {

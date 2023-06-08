@@ -11,12 +11,12 @@ export default function HomepageOwnersView(props) {
           <div className="small-profile1">
             <img className="logout1" src={logout} alt="Logout" />
             <div className="overlap-groupA">
-              <img className="profile-photoA" src='frontend/src/components/logo/logo.png' alt="Profile photo" />
-              <img className="chatty-kats" src='frontend/src/components/logo/ChattyKat.png' alt="ChattyKats" />
+              <img className="profile-photoA" src={require(`../components/logo/logo.png`)} alt="Profile photo" />
+              <img className="chatty-kats" src={require('../components/logo/ChattyKat.png')} alt="ChattyKats" />
             </div>
           </div>
           <div className="chattykat-homepage"></div>
-          <img className="chattykat-homepage-1" src="frontend/src/components/logo/ChattyKat.png" alt="chattykat homepage " />
+          <img className="chattykat-homepage-1" src={require('../components/logo/ChattyKat.png')} alt="chattykat homepage " />
           <div className="overlap-groupZ">
             <div className="uiux-designernunito-normal-violet-eggplant-16px">
               {uiUxDesigner}
@@ -24,7 +24,7 @@ export default function HomepageOwnersView(props) {
             <div className="chatty-kats-1nunito-bold-violet-eggplant-30px">
               {chattyKats}
             </div>
-            <img className="img-big" src='' alt="img&amp; bg" />
+            <img className="img-big" src={require(`../components/logo/logo.png`)}  alt="img&amp; bg" />
           </div>
           <div className="menu1">
             <div className="home1">
