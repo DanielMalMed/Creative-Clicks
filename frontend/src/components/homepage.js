@@ -24,11 +24,11 @@ export default function HomepageOwnersView(props) {
             <div className="chatty-kats-1nunito-bold-violet-eggplant-30px">
               {chattyKats}
             </div>
-            <img className="img-big" src={imgBg} alt="img&amp; bg" />
+            <img className="img-big" src='' alt="img&amp; bg" />
           </div>
           <div className="menu1">
             <div className="home1">
-              <img className="icon-home1" src={iconHome} alt="icon-home" />
+              <img className="icon-home" src={iconHome} />
               <div className="placenunito-semi-bold-yellow-orange-16px">
                 {place}
               </div>

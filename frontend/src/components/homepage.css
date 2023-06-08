@@ -76,21 +76,19 @@
 }
 
 .chattykat-homepage {
-  background-color: var(--white);
-  border-radius: 10px;
-  height: 403px;
-  left: 250px;
-  position: absolute;
-  top: 104px;
   width: 1151px;
+  height: 280px;
+  margin: 81px 50px 151px 21px;
+  border-radius: 5px;
+  background-color: #31e7dc;
 }
 
 .chattykat-homepage-1 {
-  height: 280px;
-  left: 250px;
-  position: absolute;
-  top: 104px;
-  width: 1151px;
+ width: 519.5px;
+  height: 448px;
+  flex-grow: 0;
+  margin: 0 63.5px 0 0;
+  padding: 231.9px 39.5px 79px 303px;
 }
 
 .overlap-groupZ {
@@ -112,13 +110,21 @@
 }
 
 .chatty-kats-1nunito-bold-violet-eggplant-30px {
-  left: 332px;
-  letter-spacing: 0;
+  width: 251.4px;
+  height: 60.8px;
+  flex-grow: 0;
+  margin: 193.4px 0 193.8px 331.6px;
+  font-family: Nunito;
+  font-size: 30px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
   line-height: normal;
-  position: absolute;
-  top: 193px;
-  width: 251px;
+  letter-spacing: normal;
+  text-align: left;
+  color: #a303a0;
 }
+
 
 .img-big {
   height: 448px;
@@ -143,13 +149,24 @@
 }
 
 .home1 {
-  align-items: flex-start;
-  display: flex;
-  gap: 16px;
-  height: 22px;
-  margin-left: 2px;
-  min-width: 82px;
+  width: 20px;
+  height: 17px;
+  flex-grow: 0;
+  margin: 0 0 0 16px;
+  opacity: 0.7;
+  font-family: Nunito;
+  font-size: 16px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fbb03b;
+  margin-top: 1px;
+ 
 }
+
 
 .icon-home1 {
   height: 17px;
