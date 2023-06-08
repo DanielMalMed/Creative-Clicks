@@ -7,10 +7,9 @@ import HomeFeeds from "./homeposts";
 
 // export default App;
 
-export default function HomepageOwnersView(props) {
+const HomepageOwnersView = (props) => {
   const { logout, profilePhoto, chattykats, uiUxDesigner, chattyKats, imgBg, iconHome, place, profile, title, aboutUsWelcomeTo } = props;
 
-const HomepageOwnersView = () => {
   return (
     <div className={styles.homepageOwnersView}>
       <div className={styles.smallProfile}>
