@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useAuthContext } from "../hook/useAuthContext";
+import Logoutbutton from "./logoutbutton";
 
 function Tpostcreate(props) {
   const {user} = useAuthContext()
@@ -77,14 +78,16 @@ function Tpostcreate(props) {
               <div className="bg" ></div>
               <div className="menu-name" >
                 <div className="home" >
-                  <img className="icon-home" src={iconHome} alt="icon-home" />
-                  <div className="place nunito-semi-bold-white-16px" >
-                    {place}
-                  </div>
+                <button className="home" onClick={() => window.location = "/Homepage"} >
+              <img className="icon-home" src={iconHome} alt="icon-home"  />
+              <div className="place nunito-semi-bold-white-16px" >
+                {place}
+                </div>
+                  </button>
                 </div>
                 <div className="overlap-group" >
                   <div className="profile" >
-                    {profile}
+                  <button onClick={() =>{window.location = "/ProfilePageOwnersView"}}>{profile}</button>
                   </div>
                   <div className="rectangle-289" ></div>
                   <img
@@ -116,6 +119,8 @@ function Tpostcreate(props) {
                   <img className="log-out" src={logOut} alt="Log out" />
                 </div>
               </div>
+              <Logoutbutton />  
+
             </div>
             <div className="overlap-group6" >
               <img
