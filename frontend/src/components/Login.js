@@ -1,16 +1,19 @@
 import React, { useState } from "react";
 import { useLogin } from "../hook/useLogin";
-import logo from './logo/creative-clicks-logo.svg';
+import logo from './logo/creative-clicks-logo.svg'
+import { useAuthContext } from "../hook/useAuthContext";
+
 
 function Login (props) {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const {login, error, isLoading} = useLogin()
+    const {user} = useAuthContext()
 
     const handleSubmit = async (e) =>{
         e.preventDefault();
         await login(email, password); 
-        if(login) {window.location = "/ProfilePageOwnersView"}
+        if(user) {window.location = "/ProfilePageOwnersView"}
         
     }
     return(

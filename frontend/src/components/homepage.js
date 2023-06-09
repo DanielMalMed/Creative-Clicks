@@ -1,7 +1,6 @@
 import React from "react";
 import './homepage.css'
-import { useLogout } from "../hook/useLogout";
-
+import Logoutbutton from "./logoutbutton";
 
 export default function HomepageOwnersView(props) {
   const { logout, profilePhoto, chattykats, uiUxDesigner, chattyKats, imgBg, iconHome, place, profile, title, aboutUsWelcomeTo } = props;
@@ -38,7 +37,7 @@ export default function HomepageOwnersView(props) {
             <div className="profile1">
               <img className="icon-user" src="https://anima-uploads.s3.amazonaws.com/projects/647a8659bf8eb1cccd628690/releases/647a875c7163986472f1aca2/img/person.svg" alt="icon-user" />
               <div className="profile-10">
-                {profile}
+                <button onClick={() =>{window.location = "/ProfilePageOwnersView"}}>{profile}</button>
               </div>
             </div>
           </div>
@@ -47,7 +46,7 @@ export default function HomepageOwnersView(props) {
             {title}
           </h1>
           <img className="line-30" src="line-3.svg" alt="Line 3" />
-          <Group7 />
+          <Logoutbutton />
           <p className="about-us-welcome-todmsans-normal-black-16px">
             {aboutUsWelcomeTo}
           </p>
@@ -57,18 +56,3 @@ export default function HomepageOwnersView(props) {
   );
 }
 
-function Group7() {
-  const { logout } = useLogout()
-  const handleClick = () => { 
-    logout();
-    window.location = "/ "
-  }
-  return (
-    <div className="group-70">
-      <div className="logout-1dmsans-normal-black-16px">
-        <button onClick={handleClick}>Logout</button>
-      </div>
-      <img className="lineC" src="line.svg" alt="Line" />
-    </div>
-  );
-}

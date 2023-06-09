@@ -2,6 +2,7 @@ import React from "react";
 import ProfilePosts from "./Profileposts";
 import '../App.css';
 import { useAuthContext } from "../hook/useAuthContext";
+import Logoutbutton from "./logoutbutton";
 
 
 export default function ProfilePageOwnersView(props) {
@@ -77,6 +78,8 @@ export default function ProfilePageOwnersView(props) {
                   <img className="log-out"  src={logOut} alt="Log out" />
                 </div>
               </div>
+              <Logoutbutton />  
+
             </div>
             <div className="overlap-group6" >
               <img

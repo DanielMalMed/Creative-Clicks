@@ -83,7 +83,6 @@
 }
 
 .chattykat-homepage-1 {
-  
   margin-left: 400px;
   background-color: #31e7dc;
   text-align: right;
@@ -108,7 +107,7 @@
 }
 
 .chatty-kats-1nunito-bold-violet-eggplant-30px {
-  idth: 500px;
+  width: 500px;
     height: 500px;
     margin: 500px;
     font-family: Nunito;
