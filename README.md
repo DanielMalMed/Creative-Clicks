@@ -15,6 +15,7 @@ post page wherer you can type out your post and add an emjoi. Once you have fini
 action will securely save your entery to the database, associating it with your unique user email.
 if you decide to sign out by clicking the log-out button in the top right, you will be logged out ffrom your profile. 
 
+Unfortunately we did not get to finish the about me section on the profile push to show the user information, could not get the info added to the local storage once the user was created.
 We went with the MERN stack since is what we are use to the most and love using, it is also what we have been using on some of our side projects, for our authentication and authorization we went with bcrypt and jsonwebtokens.
 
 
