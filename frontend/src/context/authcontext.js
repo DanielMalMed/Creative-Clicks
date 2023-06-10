@@ -17,7 +17,7 @@ export const AuthContextProvider = ({ children }) => {
   const [state, dispatch] = useReducer(authReducer, {
     user: null
   })
-  //gets the local storage to you can reload the page
+  
   useEffect(() => {
     const user = JSON.parse(localStorage.getItem('user'))
 

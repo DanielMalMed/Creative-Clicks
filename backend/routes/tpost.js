@@ -13,20 +13,20 @@ router.route('/').get((req, res) => {
         .catch(err => res.status(400).json('Error: ' + err));
 });
 
-//GET by ID
-router.route('/:id').get((req, res) => {
-    Tposts.findById(req.params.id)
-        .then(tposts => res.json(tposts))
-        .catch(err => res.status(400).json('Error: ' + err));
-})
+// //GET by ID
+// router.route('/:id').get((req, res) => {
+//     Tposts.findById(req.params.id)
+//         .then(tposts => res.json(tposts))
+//         .catch(err => res.status(400).json('Error: ' + err));
+// })
 
 
-//delete Tposts by ID
-router.route('/:id').delete((req, res) => {
-    Tposts.findByIdAndDelete(req.params.id)
-    .then(() => res.json('Tpost.'))
-    .catch(err => res.status(400).json('Error: ' + err));
-});
+// //delete Tposts by ID
+// router.route('/:id').delete((req, res) => {
+//     Tposts.findByIdAndDelete(req.params.id)
+//     .then(() => res.json('Tpost.'))
+//     .catch(err => res.status(400).json('Error: ' + err));
+// });
 
 //POST route
 router.route('/add').post((req, res) => {

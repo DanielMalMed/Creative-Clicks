@@ -3,6 +3,7 @@ import React from 'react';
 import Tpostcreate from './components/tpostcreate';
 import './App.css';
 
+import HomeFeeds from './components/homeposts';
 import ProfilePageOwnersView from './components/Profilepage';
 import Landingpage from './components/landingpage';
 import HomepageOwnersView from './components/homepage'
@@ -21,7 +22,7 @@ function App() {
           <Route exact path="/tpostcreate" element={<Tpostcreate {...profilePageOwnersViewData}/>} />
           <Route exact path="/ProfilePageOwnersView" element={<ProfilePageOwnersView {...profilePageOwnersViewData} />} />
           <Route exact path='/' element={<Landingpage />} />
-          <Route exact path='/ppostcreate' element={<Ppostcreate />} />
+          <Route exact path='/ppostcreate' element={<Ppostcreate {...profilePageOwnersViewData}/>} />
           <Route exact path='/Homepage' element={<HomepageOwnersView {...homepageOwnersViewData}/>} />
         </Routes>
 
@@ -71,6 +72,7 @@ const homepageOwnersViewData = {
   title: "About Us",
   aboutUsWelcomeTo: (
     <>
+
       About Us:
       <br />
       <br />

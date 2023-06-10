@@ -28,6 +28,7 @@ function Login (props) {
             <input value={password} onChange = {(e) => setPassword(e.target.value)} type="password" placeholder="***********" id="password" name="password"/>
             <button type="submit" disabled={isLoading}>Log In </button>
             {error && <div>{error}</div>}
+            
 
         </form>
         <button className="link-btn" onClick={() => props.onFormSwitch('Sign_in')}> Don't have an account? Sign in here. </button>

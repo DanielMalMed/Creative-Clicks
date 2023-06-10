@@ -3,7 +3,7 @@ import { useAuthContext } from "../hook/useAuthContext";
 import Logoutbutton from "./logoutbutton";
 
 function Tpostcreate(props) {
-  const {user} = useAuthContext()
+  const { user } = useAuthContext()
   const {
     iconHome,
     place,
@@ -40,7 +40,7 @@ function Tpostcreate(props) {
     setTpost({ ...tpost, mood: e.target.value })
   }
 
-  const onSubmit = async(e) => {
+  const onSubmit = async (e) => {
     e.preventDefault();
 
     setTpost({
@@ -53,7 +53,7 @@ function Tpostcreate(props) {
       mood: tpost.mood
     })
 
-    const response = await fetch ('/tpost/add', {
+    const response = await fetch('/tpost/add', {
       method: 'POST',
       body: JSON.stringify(tpost),
       headers: {
@@ -61,11 +61,11 @@ function Tpostcreate(props) {
         'Authorization': `Bearer ${user.token}`
       }
     })
-     ;
-    if (response.ok){
-          console.log(tpost)
+      ;
+    if (response.ok) {
+      console.log(tpost)
 
-    window.location = "/ProfilePageOwnersView"
+      window.location = "/ProfilePageOwnersView"
     }
 
   }
@@ -78,16 +78,16 @@ function Tpostcreate(props) {
               <div className="bg" ></div>
               <div className="menu-name" >
                 <div className="home" >
-                <button className="home" onClick={() => window.location = "/Homepage"} >
-              <img className="icon-home" src={iconHome} alt="icon-home"  />
-              <div className="place nunito-semi-bold-white-16px" >
-                {place}
-                </div>
+                  <button className="home" onClick={() => window.location = "/Homepage"} >
+                    <img className="icon-home" src={iconHome} alt="icon-home" />
+                    <div className="place nunito-semi-bold-white-16px" >
+                      {place}
+                    </div>
                   </button>
                 </div>
                 <div className="overlap-group" >
                   <div className="profile" >
-                  <button onClick={() =>{window.location = "/ProfilePageOwnersView"}}>{profile}</button>
+                    <button onClick={() => { window.location = "/ProfilePageOwnersView" }}>{profile}</button>
                   </div>
                   <div className="rectangle-289" ></div>
                   <img
@@ -119,7 +119,7 @@ function Tpostcreate(props) {
                   <img className="log-out" src={logOut} alt="Log out" />
                 </div>
               </div>
-              <Logoutbutton />  
+              <Logoutbutton />
 
             </div>
             <div className="overlap-group6" >
@@ -133,7 +133,7 @@ function Tpostcreate(props) {
                 <div className="uiux-designer" >
                 </div>
                 <h1 className="title" >
-                {user && <span>{user.email}</span>}
+                  {user && <span>{user.email}</span>}
                 </h1>
                 <div className="img-bg" style={{ backgroundImage: `url(${imgBg})` }} >
                   <div className="img" style={{ backgroundImage: `url(${img})` }} ></div>
@@ -234,7 +234,6 @@ function Tpostcreate(props) {
                 <img
                   className="line-3-1"
 
-                  src="https://anima-uploads.s3.amazonaws.com/projects/647a8659bf8eb1cccd628690/releases/647a875c7163986472f1aca2/img/line-3.svg"
                   alt="Line 3"
                 />
               </div>
